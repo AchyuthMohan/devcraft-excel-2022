@@ -16,35 +16,33 @@ function Hero() {
           <div className="hero__container__text">
             <div className="hero__container__text__title">Diety</div>
             <Stars>
-            <div className="hero__container__text__subtitle">
-              Our Diet Tracker makes it easy to monitor what you eat, when you
-              eat it, and how much you consume. Get insights, identify patterns,
-              and stay motivated towards a healthier you. Start crushing your
-              goals one meal at a time!
-            </div>
+              <div className="hero__container__text__subtitle">
+                Our Diet Tracker makes it easy to monitor what you eat, when you
+                eat it, and how much you consume. Get insights, identify
+                patterns, and stay motivated towards a healthier you. Start
+                crushing your goals one meal at a time!
+              </div>
             </Stars>
-            <div className="hero__container__text__button">Get Started</div>
+            <div
+              className="hero__container__text__button"
+              style={{
+                cursor: "pointer",
+              }}
+              onClick={() => {
+                if (signedInUser) {
+                  navigate("/diet");
+                } else {
+                  signInWithGoogle();
+                }
+              }}
+            >
+              {signedInUser ? "View Dashboard" : " Get Started"}
+            </div>
           </div>
           <div className="hero__container__image">
             <img src={hero} alt="hero" />
           </div>
-          <div
-            className="hero__container__text__button"
-            style={{
-              cursor: "pointer",
-            }}
-            onClick={() => {
-              if (signedInUser) {
-                navigate("/diet");
-              } else {
-                signInWithGoogle();
-              }
-            }}
-          >
-            {signedInUser ? "View Dashboard" : " Get Started"}
-          </div>
         </div>
-        
       </Stars>
     </>
   );
