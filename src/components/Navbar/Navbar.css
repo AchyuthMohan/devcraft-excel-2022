@@ -60,9 +60,10 @@
 
 @media screen and (max-width: 800px) {}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .nav__main a {
         font-size: 1rem;
+        padding-left: 0rem;
     }
     .nav__main {
         height: 4rem;

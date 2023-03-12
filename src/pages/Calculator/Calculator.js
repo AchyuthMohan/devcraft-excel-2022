@@ -54,6 +54,7 @@ const Calculator = () => {
           <label className="calc__label">
             Weight (in kg):
             <input
+            className="calc__acceptor"
               type="number"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
@@ -66,6 +67,7 @@ const Calculator = () => {
             Height (in cm):
             <input
               type="number"
+              className="calc__acceptor"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
@@ -75,6 +77,7 @@ const Calculator = () => {
           <label>
             Age:
             <input
+            className="calc__acceptor"
               type="number"
               value={age}
               onChange={(e) => setAge(e.target.value)}
@@ -84,9 +87,9 @@ const Calculator = () => {
           <div className="form__inside">
           <label>
             Gender:
-            <select value={gender} onChange={(e) => setGender(e.target.value)}>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+            <select className="calc__acceptor" value={gender} onChange={(e) => setGender(e.target.value)}>
+              <option className="calc__acceptor" value="male">Male</option>
+              <option className="calc__acceptor" value="female">Female</option>
             </select>
           </label>
           </div>  
@@ -94,6 +97,7 @@ const Calculator = () => {
             <label>
             Activity level:
             <select
+            className="calc__acceptor"
               value={activityLevel}
               onChange={(e) => setActivityLevel(e.target.value)}
             >

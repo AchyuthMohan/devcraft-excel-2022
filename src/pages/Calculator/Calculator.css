@@ -15,19 +15,16 @@
     justify-content: space-between;
     gap: 2rem;
 }
+
+.calc_accpetor{
+  
+}
 .calorie-calculator label {
     display: block;
     margin-bottom: 0.5rem;
 }
 .calc_btn{
-    background-color:#0e7640 !important; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+   
 }
 
 .calorie-calculator input[type="number"] {
