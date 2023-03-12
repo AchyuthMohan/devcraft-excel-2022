@@ -1,51 +1,53 @@
 .diets__container {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  padding: 3rem;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .diet_card_img {
-  width: 11rem;
-  border-radius: 10px;
-  height: 8rem;
+    width: 11rem;
+    height: 8rem;
 }
 
 .diets__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 15rem;
-  height: fit-content;
-  align-items: center;
-  backdrop-filter: blur(25px) saturate(137%);
-  -webkit-backdrop-filter: blur(25px) saturate(137%);
-  background-color: rgb(22 48 45 / 90%);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-
-  padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 15rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: center;
+    backdrop-filter: blur(25px) saturate(137%);
+    -webkit-backdrop-filter: blur(25px) saturate(137%);
+    background-color: rgb(157 157 157 / 40%);
+    border: 0px 5px 5px 4px solid red;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 1rem;
 }
 
 .diets__card button {
-  background: #32de84;
-  border: none;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-size: 1rem;
-  width: 10rem;
-  font-weight: 600;
-  transition: 0.3s;
+    background: #0e7640;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 10rem;
+    font-weight: 600;
+    transition: 0.3s;
 }
+
 .diets__main {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  color: #32de84;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #32de84;
 }
