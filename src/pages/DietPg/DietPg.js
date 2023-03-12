@@ -1,46 +1,41 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import './DietPg.css'
 import MainLayout from '../../components/MainLayout/MainLayout'
+import { diets } from '../../data/diets'
+import DietDetDialog from '../../components/DietDetDialog/DietDetDialog'
+import Aos from 'aos'
 const DietPg = () => {
+    const[open,setOpen]=useState(false)
+    const[description,setDescription]=useState('')
+    const[dName,setDname]=useState('')
+    const[image,setImage]=useState()
+    const handleClose=()=>{
+        setOpen(false)
+    }
+    useEffect(()=>{
+        Aos.init({duration:700})
+    },[])
   return (
     <MainLayout>
+        <DietDetDialog open={open} handleClose={handleClose} description={description} dName={dName} image={image}/>
         <div className="diets__main">
-            <h1>Our Diets</h1>
-            <div className="diets__container">
-                <div className="diets__card">
-                    <img src="https://avatars.githubusercontent.com/u/110590339?s=200&v=4"className='diet_card_img' alt=" " />
-                    <p>Food Name</p>
-                    <p>Calorie</p>
-                    <button>View Details</button>
-                </div>
+            <h1 data-aso="zoom-in">Our Diets</h1>
+            <div className="diets__container" data-aos="zoom-in">
 
-                <div className="diets__card">
-                    <img src="https://avatars.githubusercontent.com/u/110590339?s=200&v=4"className='diet_card_img' alt=" " />
-                    <p>Food Name</p>
-                    <p>Calorie</p>
-                    <button>View Details</button>
-                </div>
-                 <div className="diets__card">
-                    <img src="https://avatars.githubusercontent.com/u/110590339?s=200&v=4"className='diet_card_img' alt=" " />
-                    <p>Food Name</p>
-                    <p>Calorie</p>
-                    <button>View Details</button>
-                </div>
-                <div className="diets__card">
-                    <img src="https://avatars.githubusercontent.com/u/110590339?s=200&v=4"className='diet_card_img' alt=" " />
-                    <p>Food Name</p>
-                    <p>Calorie</p>
-                    <button>View Details</button>
-                </div>
-
-                <div className="diets__card">
-                    <img src="https://avatars.githubusercontent.com/u/110590339?s=200&v=4" className='diet_card_img' alt=" " />
-                    <p>Food Name</p>
-                    <p>Calorie</p>
-                    <button>View Details</button>
-                </div>
-
-
+                {diets.map((diet,index)=>{
+                    return( <div className="diets__card">
+                    <img src={diet.image}className='diet_card_img' alt=" " />
+                    <p>{diet.name}</p>
+                    <p>{diet.calories}</p>
+                    <button onClick={()=>{
+                        setOpen(true)
+                        setDescription(diet.description)
+                        setDname(diet.name)
+                        setImage(diet.image)
+                    }}>View Details</button>
+                </div>)
+                })}
+               
             </div>
         </div>
     </MainLayout>

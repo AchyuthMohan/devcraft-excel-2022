@@ -1,0 +1,27 @@
+.diet_detDialog__main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-family: var(--primary-font);
+    backdrop-filter: blur(25px) saturate(137%);
+    -webkit-backdrop-filter: blur(25px) saturate(137%);
+    background-color: rgb(22 48 45 / 90%);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+
+}
+.diet_detDialog__main h1{
+    color: #32de84;
+}
+.image__inside_dial{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
