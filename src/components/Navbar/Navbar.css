@@ -1,65 +1,168 @@
 .nav__main {
-    min-width: 70vw;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    margin: 1.5rem;
-    flex-direction: row;
-    height: 5rem;
-    padding-left: 3rem;
-    font-family: var(--secondary-font) !important;
-    align-items: center;
-    padding-right: 3rem;
-    background: #27292d;
-    box-shadow: 18px 18px 36px rgba(0, 0, 0, 0.25), -18px -18px 36px rgba(255, 255, 255, 0.25), inset 1px 1px 2px rgba(0, 0, 0, 0.02);
-    border-radius: 50px;
-    /* clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%); */
-    justify-content: space-between;
+  min-width: 70vw;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: 1.5rem;
+  flex-direction: row;
+  height: 5rem;
+  padding-left: 3rem;
+  font-family: var(--secondary-font) !important;
+  align-items: center;
+  padding-right: 3rem;
+  background: #27292d;
+  box-shadow: 18px 18px 36px rgba(0, 0, 0, 0.25),
+    -18px -18px 36px rgba(255, 255, 255, 0.25),
+    inset 1px 1px 2px rgba(0, 0, 0, 0.02);
+  border-radius: 50px;
+  /* clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%); */
+  justify-content: space-between;
 }
 
-.nav__main a {
-    cursor: pointer;
-    color: #697080;
-    text-decoration: none;
-    font-size: 1.5rem;
+ a {
+  cursor: pointer;
+  color: #697080 !important;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-.nav__main a:hover {
-    color: #D8AE5A;
+ a:hover {
+  color: #d8ae5a !important;
 }
 
-.nav__main a:hover {
-    color: #D8AE5A;
+ a:hover {
+  color: #d8ae5a !important;
 }
 
 .active {
-    color: #D8AE5A !important;
+  color: #d8ae5a !important;
 }
 
-.nav__main a:active {
-    color: #D8AE5A;
+ a:active {
+  color: #d8ae5a;
 }
 
-.nav__main img
-{
-    height: 60px;
-    width: 60px;
+.nav__main img {
+  height: 60px;
+  width: 60px;
 }
-@media only screen and (max-width: 1300px) {}
+.hamburger {
+  font-size: 1.5rem;
+  color: white;
+}
+.nav__mob {
+  display: none;
+  width: 100%;
+  margin-top: -6rem;
+  position: fixed;
+}
+.nav__mob_container {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.hero__container__text__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  color: #96ae92;
+}
 
-@media (min-device-width: 20px) and (max-device-width: 500px) {}
+.nav__drawer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 300px;
+  padding: 1.5rem;
+  background-color: #27292d;
+}
 
-@media only screen and (max-width: 1200px) {}
+.nav__drawer_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
 
-@media only screen and (max-width: 1100px) {}
+.navbar_items_mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding-top: 3rem;
+  z-index: 9;
+}
 
-@media screen and (max-width: 992px) {}
+.nav_item_mob {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 400;
+}
+.nav_btn {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  z-index: 999;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0f7517;
+  padding-left: auto;
+}
 
-@media screen and (max-width: 800px) {}
+@media (max-width: 942px) {
+  .nav__main {
+    display: none;
+  }
+  .navbar_offset {
+    display: none;
+  }
+  .nav__mob {
+    display: block;
+    z-index: 14;
+  }
+}
+@media only screen and (max-width: 1300px) {
+}
 
+@media (min-device-width: 20px) and (max-device-width: 500px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1100px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 600px) {
+  .nav__main a {
+    font-size: 1rem;
+  }
+  .nav__main {
+    height: 4rem;
+  }
+}
 @media screen and (max-width: 700px) {
     .nav__main a {
         font-size: 1rem;
@@ -71,11 +174,13 @@
 }
 
 @media screen and (max-width: 400px) {
-    .nav__main {
-        height: 3rem;
-    }
+  .nav__main {
+    height: 3rem;
+  }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+}
 
-@media only screen and (device-width: 768px) {}
+@media only screen and (device-width: 768px) {
+}

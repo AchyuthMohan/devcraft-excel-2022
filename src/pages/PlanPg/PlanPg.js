@@ -12,23 +12,31 @@ const PlanPg = () => {
     <MainLayout>
       <div className="profile__container">
         <div className="profile__div">
-          <img
-            src={signedInUser.photoURL}
-            alt=""
-            style={{
-              borderRadius: "50%",
-              border: "1px solid #265e1d",
-            }}
-          />
-          <p>
-            User ID : <span>{signedInUser.uid}</span>
-          </p>
-          <p>
-            Name : <span>{signedInUser.displayName}</span>
-          </p>
-          <p>
-            Email : <span>{signedInUser.email}</span>
-          </p>
+          <div>
+            {" "}
+            <img
+              src={signedInUser.photoURL}
+              alt=""
+              style={{
+                borderRadius: "50%",
+                border: "1px solid #265e1d",
+              }}
+            />
+          </div>
+          <div style={{
+            alignItems: "center",
+            justifyContent: "center",
+            display: "flex",
+            flexDirection: "column",
+          }}>
+            <div>
+              Name : <span>{signedInUser.displayName}</span>
+            </div>
+            <br/>
+            <div>
+              Email : <span>{signedInUser.email}</span>
+            </div>
+          </div>
         </div>
         <div
           style={{
