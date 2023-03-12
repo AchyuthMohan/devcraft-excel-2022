@@ -163,6 +163,15 @@
     height: 4rem;
   }
 }
+@media screen and (max-width: 700px) {
+    .nav__main a {
+        font-size: 1rem;
+        padding-left: 0rem;
+    }
+    .nav__main {
+        height: 4rem;
+    }
+}
 
 @media screen and (max-width: 400px) {
   .nav__main {

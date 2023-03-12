@@ -24,7 +24,7 @@ function Footer() {
               <div>Diety</div>
             </div>
             <div className="footer_phone">+1 (7635) 547-12-97</div>
-            <div className="footer_email">support@lift.agency</div>
+            <div className="footer_email">excelmec.org</div>
           </div>
           <div className="footer__section">
             <div className="footer__heading_1">Quick Links</div>
@@ -44,7 +44,7 @@ function Footer() {
             <div className="footer__heading_1">LinkedIn</div>
             <div className="footer__subscribe">
               <input type="text" placeholder="Enter your email" />
-              <button className="footer__button">Twitter</button>
+              <button className="footer__button">Submit</button>
             </div>
           </div>
           <div
