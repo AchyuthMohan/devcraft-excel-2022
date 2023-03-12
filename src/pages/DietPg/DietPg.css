@@ -10,6 +10,7 @@
 .diet_card_img {
     width: 11rem;
     height: 8rem;
+    border-radius: 1rem;
 }
 
 .diets__card {

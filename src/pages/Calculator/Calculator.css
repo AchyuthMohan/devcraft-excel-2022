@@ -1,0 +1,39 @@
+.calorie-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calorie-calculator label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.calorie-calculator input[type="number"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #f2f2f2;
+}
+
+.calorie-calculator select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #f2f2f2;
+}
+
+.calorie-calculator button[type="submit"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.calorie-calculator p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
