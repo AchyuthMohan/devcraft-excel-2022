@@ -11,7 +11,7 @@
   flex-direction: row;
   height: 5rem;
   padding-left: 3rem;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font) !important;
   align-items: center;
   padding-right: 3rem;
   background: #27292d;
@@ -29,18 +29,18 @@
   text-decoration: none;
   font-size: 1.5rem;
 }
-.nav__main a:hover{
-    color: #1C810B;
+.nav__main a:hover {
+  color: #d8ae5a;
 }
 
 .nav__main a:hover {
-  color: #1c810b;
+  color: #d8ae5a;
 }
 .active {
-  color: #1c810b !important;
+  color: #d8ae5a !important;
 }
 .nav__main a:active {
-  color: #1c810b;
+  color: #d8ae5a;
 }
 @media only screen and (max-width: 1300px) {
 }
