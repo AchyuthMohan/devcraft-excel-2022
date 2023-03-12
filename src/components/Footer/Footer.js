@@ -59,7 +59,7 @@ function Footer() {
             A product of <span className="footer__heading_2">Diety</span>
           </div>
           <div className="footer__section_1_content">
-            © 2020 Lift Media. All rights reserved
+            © 2023 Lift Media. All rights reserved
           </div>
         </div>
       </div>
