@@ -36,6 +36,7 @@ const PlanPg = () => {
             <div>
               Email : <span>{signedInUser.email}</span>
             </div>
+            
           </div>
         </div>
         <div
@@ -47,6 +48,7 @@ const PlanPg = () => {
             alignItems: "center",
           }}
         >
+          <h1 style={{color:'#32de84', fontFamily:'monospace'}}>You Keto Diet Progress</h1>
           <img
             src={roadmap}
             alt=""
