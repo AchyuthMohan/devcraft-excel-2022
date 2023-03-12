@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useContext,UserContext}from 'react'
 import MainLayout from '../../components/MainLayout/MainLayout'
 import Navbar from '../../components/Navbar/Navbar'
 import About from '../../components/About/About'
