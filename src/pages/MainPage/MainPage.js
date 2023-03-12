@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
 import MainLayout from "../../components/MainLayout/MainLayout";
 import "./MainPage.css";
+import Footer from "../../components/Footer/Footer";
 const MainPage = () => {
   const { signedInUser, signInWithGoogle, signOutOfGoogle } =
     useContext(UserContext);
