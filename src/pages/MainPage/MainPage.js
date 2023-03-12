@@ -8,9 +8,9 @@ import Hero from "../../components/Hero/Hero";
 const MainPage = () => {
   return (
     <MainLayout>
-      <Hero />
-      <About />
-      <MoreDetails />
+      <Hero/>
+      {/* <About />
+      <MoreDetails /> */}
     </MainLayout>
   );
 };
