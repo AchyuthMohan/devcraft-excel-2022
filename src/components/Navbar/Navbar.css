@@ -30,17 +30,17 @@
   font-size: 1.5rem;
 }
 .nav__main a:hover {
-  color: #0e7640;
+  color: #D8AE5A;
 }
 
 .nav__main a:hover {
-  color: #0e7640;
+  color: #D8AE5A;
 }
 .active {
-  color: #0e7640 !important;
+  color: #D8AE5A !important;
 }
 .nav__main a:active {
-  color: #0e7640;
+  color: #D8AE5A;
 }
 @media only screen and (max-width: 1300px) {
 }
