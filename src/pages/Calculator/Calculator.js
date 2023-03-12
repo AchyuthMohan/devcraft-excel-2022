@@ -49,7 +49,7 @@ const Calculator = () => {
   return (
     <MainLayout>
       <div className="calorie-calculator">
-        <h1>Calorie Calculator</h1>
+        <h1 style={{color:'green', fontFamily:'monospace'}}>Calorie Calculator</h1>
         <form onSubmit={handleCalculate}>
           <div className="form__inside">
             <div
