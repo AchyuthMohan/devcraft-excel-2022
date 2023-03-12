@@ -3,7 +3,7 @@ import { Dialog } from '@mui/material'
 import './DietDetDialog.css'
 const DietDetDialog = () => {
   return (
-    Dialog
+    <Dialog
       fullWidth={true}
       maxWidth={"md"}
       PaperProps={{
