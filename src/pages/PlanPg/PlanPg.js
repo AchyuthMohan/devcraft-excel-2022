@@ -1,8 +1,11 @@
 import React from 'react'
 import './PlanPg.css'
+import MainLayout from '../../components/MainLayout/MainLayout'
 const PlanPg = () => {
   return (
-    <div>PlanPg</div>
+    <MainLayout>
+        PlanPg
+    </MainLayout>
   )
 }
 

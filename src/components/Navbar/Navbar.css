@@ -1,0 +1,7 @@
+.nav__main{
+    min-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+}
