@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
+import MainLayout from "../../components/MainLayout/MainLayout";
 import "./MainPage.css";
 const MainPage = () => {
   const { signedInUser, signInWithGoogle, signOutOfGoogle } =
     useContext(UserContext);
   return (
-    <div>
+    <MainLayout>
       <h1>Main Page</h1>
       <button
         onClick={() => {
@@ -24,7 +25,7 @@ const MainPage = () => {
           <img src={signedInUser.photoURL} alt="" />
         </div>
       )}
-    </div>
+    </MainLayout>
   );
 };
 
