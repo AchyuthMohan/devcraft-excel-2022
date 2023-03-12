@@ -1,8 +1,14 @@
 import React from "react";
 import "./Hero.css";
 import hero from "../../assets/Landing/hero.svg";
+import { UserContext } from "../../contexts/UserContext";
+import { useNavigate } from "react-router-dom";
+
 import Stars from "../Stars/Stars";
 function Hero() {
+  const { signedInUser, signInWithGoogle, signOutOfGoogle, setSignedInUser } =
+    React.useContext(UserContext);
+  const navigate = useNavigate();
   return (
     <>
       <Stars>
@@ -21,6 +27,21 @@ function Hero() {
           </div>
           <div className="hero__container__image">
             <img src={hero} alt="hero" />
+          </div>
+          <div
+            className="hero__container__text__button"
+            style={{
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              if (signedInUser) {
+                navigate("/diet");
+              } else {
+                signInWithGoogle();
+              }
+            }}
+          >
+            {signedInUser ? "View Dashboard" : " Get Started"}
           </div>
         </div>
         

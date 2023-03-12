@@ -12,8 +12,8 @@
     /* background: #00203c; */
     padding: 1rem;
     margin: 3rem auto;
-    color: white;
-    background: rgb(74, 99, 95);
+    color: black;
+    background: #96AE92;
     /* background: linear-gradient(90deg, rgba(115, 179, 169, 1) 12%, rgba(135, 226, 174, 1) 45%, rgba(129, 175, 149, 1) 98%); */
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;

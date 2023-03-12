@@ -1,7 +1,9 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../contexts/UserContext";
 const Navbar = () => {
+  const { signedInUser } = React.useContext(UserContext);
   return (
     <div className="nav__main">
       <Link
@@ -25,16 +27,6 @@ const Navbar = () => {
         Diet Plans
       </Link>
       <Link
-        to="/diet"
-        className={
-          window.location.pathname === "/diet"
-            ? "nav__section active"
-            : "nav__section"
-        }
-      >
-        My Plan
-      </Link>
-      <Link
         to="/calculator"
         className={
           window.location.pathname === "/calculator"
@@ -44,6 +36,18 @@ const Navbar = () => {
       >
         Calorie Calculator
       </Link>
+      {signedInUser ? (
+        <Link
+          to="/diet"
+          className={
+            window.location.pathname === "/diet"
+              ? "nav__section active"
+              : "nav__section"
+          }
+        >
+          My Profile
+        </Link>
+      ) : null}
     </div>
   );
 };
