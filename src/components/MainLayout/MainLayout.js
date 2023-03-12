@@ -7,6 +7,7 @@ const MainLayout = ({ children }) => {
     <div className="main__layout_conatiner">
         <Navbar/>
         {children}
+        <Footer/>
     </div>
   );
 };
