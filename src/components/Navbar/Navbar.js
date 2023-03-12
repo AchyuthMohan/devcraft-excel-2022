@@ -32,7 +32,7 @@ const Navbar = () => {
             : "nav__section"
         }
       >
-        Get Plan
+        My Plan
       </Link>
       <Link
         to="/calculator"

@@ -1,4 +1,6 @@
-export { default as MainPage } from "./MainPage/MainPage";
-export { default as DietDetailPg } from "./DietDetailPg/DietDetailPg";
-export { default as PlanPg } from "./PlanPg/PlanPg";
-export { default as DietPg } from "./DietPg/DietPg";
+import { lazy } from "react";
+
+export const MainPage = lazy(() => import("./MainPage/MainPage"));
+export const DietDetailPg = lazy(() => import("./DietDetailPg/DietDetailPg"));
+export const PlanPg = lazy(() => import("./PlanPg/PlanPg"));
+export const DietPg = lazy(() => import("./DietPg/DietPg"));
