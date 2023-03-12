@@ -1,80 +1,75 @@
 .nav__main {
-  min-width: 70vw;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  z-index: 100;
-  margin: 1.5rem;
-  flex-direction: row;
-  height: 5rem;
-  padding-left: 3rem;
-  font-family: var(--secondary-font) !important;
-  align-items: center;
-  padding-right: 3rem;
-  background: #27292d;
-  box-shadow: 18px 18px 36px rgba(0, 0, 0, 0.25),
-    -18px -18px 36px rgba(255, 255, 255, 0.25),
-    inset 1px 1px 2px rgba(0, 0, 0, 0.02);
-  border-radius: 50px;
-  /* clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%); */
-  justify-content: space-between;
+    min-width: 70vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    margin: 1.5rem;
+    flex-direction: row;
+    height: 5rem;
+    padding-left: 3rem;
+    font-family: var(--secondary-font) !important;
+    align-items: center;
+    padding-right: 3rem;
+    background: #27292d;
+    box-shadow: 18px 18px 36px rgba(0, 0, 0, 0.25), -18px -18px 36px rgba(255, 255, 255, 0.25), inset 1px 1px 2px rgba(0, 0, 0, 0.02);
+    border-radius: 50px;
+    /* clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%); */
+    justify-content: space-between;
 }
 
 .nav__main a {
-  cursor: pointer;
-  color: #697080;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-.nav__main a:hover {
-  color: #D8AE5A;
+    cursor: pointer;
+    color: #697080;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .nav__main a:hover {
-  color: #D8AE5A;
+    color: #D8AE5A;
 }
+
+.nav__main a:hover {
+    color: #D8AE5A;
+}
+
 .active {
-  color: #D8AE5A !important;
+    color: #D8AE5A !important;
 }
+
 .nav__main a:active {
-  color: #D8AE5A;
-}
-@media only screen and (max-width: 1300px) {
-}
-@media (min-device-width: 20px) and (max-device-width: 500px) {
-}
-@media only screen and (max-width: 1200px) {
+    color: #D8AE5A;
 }
 
-@media only screen and (max-width: 1100px) {
-}
+@media only screen and (max-width: 1300px) {}
 
-@media screen and (max-width: 992px) {
-}
+@media (min-device-width: 20px) and (max-device-width: 500px) {}
 
-@media screen and (max-width: 800px) {
-}
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 800px) {}
 
 @media screen and (max-width: 600px) {
-  .nav__main a {
-    font-size: 1rem;
-  }
-  .nav__main {
-    height: 4rem;
-  }
+    .nav__main a {
+        font-size: 1rem;
+    }
+    .nav__main {
+        height: 4rem;
+    }
 }
 
 @media screen and (max-width: 400px) {
-  .nav__main {
-    height: 3rem;
-  }
+    .nav__main {
+        height: 3rem;
+    }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {}
 
-@media only screen and (device-width: 768px) {
-}
+@media only screen and (device-width: 768px) {}
