@@ -6,11 +6,8 @@ import MoreDetails from '../../components/MoreDetails/MoreDetails'
 import './MainPage.css'
 import Hero from '../../components/Hero/Hero'
 const MainPage = () => {
-  const { signedInUser, signInWithGoogle, signOutOfGoogle } =
-    useContext(UserContext);
   return (
     <MainLayout>
-      <Navbar/>
       <Hero/>
       <About/>
       <MoreDetails/>
