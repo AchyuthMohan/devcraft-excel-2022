@@ -48,9 +48,9 @@ const Calculator = () => {
 
   return (
     <MainLayout>
-      <div>
+      <div className="calorie-calculator">
         <form onSubmit={handleCalculate}>
-          <label>
+          <label className="calc__label">
             Weight (in kg):
             <input
               type="number"
@@ -99,7 +99,7 @@ const Calculator = () => {
             </select>
           </label>
           <br />
-          <button type="submit">Calculate</button>
+          <button className="calc_btn" type="submit">Calculate</button>
         </form>
         {calories && <p>Your daily caloric needs are: {calories} kcal.</p>}
       </div>
