@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { FaTwitter, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import logo from "../../assets/logo.png";
 
 function Footer() {
   return (
@@ -8,7 +9,20 @@ function Footer() {
       <div className="footer__main">
         <div className="footer__main_1">
           <div className="footer__section">
-            <div className="footer__heading">Diety</div>
+            <div
+              className="footer__heading"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "1rem",
+              }}
+            >
+              <div>
+                <img src={logo} alt="" width={80} height={80} />
+              </div>
+              <div>Diety</div>
+            </div>
             <div className="footer_phone">+1 (7635) 547-12-97</div>
             <div className="footer_email">support@lift.agency</div>
           </div>
