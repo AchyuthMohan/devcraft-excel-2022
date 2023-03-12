@@ -6,8 +6,9 @@ const Navbar = () => {
   return (
     <div className='nav__main'>
         <Link to='/' className='nav__section'>Home</Link>
-        <Link to='/plans' className='nav__section'>Diet Plans</Link>
-        <Link className='nav__section'>Get Plan</Link>
+        <Link to='/plan' className='nav__section'>Diet Plans</Link>
+        <Link to='/diet' className='nav__section'>Get Plan</Link>
+        <Link to='/calculator'>Calorie Calculator</Link>
     </div>
   )
 }

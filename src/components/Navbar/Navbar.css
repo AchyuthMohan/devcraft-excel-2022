@@ -5,6 +5,7 @@
     background: linear-gradient(180deg, #2A2D32 0%, #131313 99.17%);
     height: 5rem;
     padding-left: 3rem;
+    font-family: var(--primary-font);
     align-items: center;
     padding-right: 3rem;
     clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
