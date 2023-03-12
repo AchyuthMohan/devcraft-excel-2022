@@ -15,8 +15,8 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/diet" element={<DietPg />} />
-            <Route path="/plan" element={<PlanPg />} />
+            <Route path="/plan" element={<DietPg />} />
+            <Route path="/diet" element={<PlanPg />} />
             <Route path="/diet-detail" element={<DietDetailPg />} />
             <Route path="/calculator" element={<Calculator />} />
           </Routes>
