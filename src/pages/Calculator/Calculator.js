@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./Calculator.css";
 import MainLayout from "../../components/MainLayout/MainLayout";
 const Calculator = () => {
@@ -50,6 +50,7 @@ const Calculator = () => {
     <MainLayout>
       <div className="calorie-calculator">
         <form onSubmit={handleCalculate}>
+          <div className="form__inside">
           <label className="calc__label">
             Weight (in kg):
             <input
@@ -58,7 +59,9 @@ const Calculator = () => {
               onChange={(e) => setWeight(e.target.value)}
             />
           </label>
-          <br />
+          </div>
+          <div className="form__inside">
+        
           <label>
             Height (in cm):
             <input
@@ -67,7 +70,8 @@ const Calculator = () => {
               onChange={(e) => setHeight(e.target.value)}
             />
           </label>
-          <br />
+          </div>
+          <div className="form__inside">
           <label>
             Age:
             <input
@@ -76,7 +80,8 @@ const Calculator = () => {
               onChange={(e) => setAge(e.target.value)}
             />
           </label>
-          <br />
+          </div>
+          <div className="form__inside">
           <label>
             Gender:
             <select value={gender} onChange={(e) => setGender(e.target.value)}>
@@ -84,8 +89,9 @@ const Calculator = () => {
               <option value="female">Female</option>
             </select>
           </label>
-          <br />
-          <label>
+          </div>  
+          <div className="form__inside">
+            <label>
             Activity level:
             <select
               value={activityLevel}
@@ -98,8 +104,11 @@ const Calculator = () => {
               <option value="extra-active">Extra active</option>
             </select>
           </label>
-          <br />
-          <button className="calc_btn" type="submit">Calculate</button>
+         
+          </div>
+          <button className="calc_btn" type="submit">
+            Calculate
+          </button>
         </form>
         {calories && <p>Your daily caloric needs are: {calories} kcal.</p>}
       </div>
