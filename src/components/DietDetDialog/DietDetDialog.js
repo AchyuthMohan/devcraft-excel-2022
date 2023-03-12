@@ -19,6 +19,9 @@ const DietDetDialog = ({open, handleClose, description,dName,image}) => {
       <img src={image} className="image__inside_dial" alt=" " />
       <p>{description}</p>
       </div>
+      <button className='dialog_btn' onClick={()=>{
+        handleClose()
+      }}>OK</button>
     </Dialog>
   )
 }

@@ -7,17 +7,24 @@ import { useNavigate } from "react-router-dom";
 import Stars from "../Stars/Stars";
 import Aos from "aos";
 function Hero() {
-  const { signedInUser, signInWithGoogle, signOutOfGoogle, setSignedInUser } =
-    React.useContext(UserContext);
+  useEffect(() => {
+    Aos.init({ duration: 700 });
+  }, []);
+  const { signedInUser, signInWithGoogle } = React.useContext(UserContext);
   const navigate = useNavigate();
   return (
     <>
       <Stars>
         <div className="hero">
           <div className="hero__container__text">
-            <div className="hero__container__text__title" data-aso="zoom-in">Diety</div>
+            <div className="hero__container__text__title" data-aos="zoom-in">
+              Diety
+            </div>
             <Stars>
-              <div className="hero__container__text__subtitle">
+              <div
+                className="hero__container__text__subtitle"
+                data-aos="zoom-in"
+              >
                 Our Diet Tracker makes it easy to monitor what you eat, when you
                 eat it, and how much you consume. Get insights, identify
                 patterns, and stay motivated towards a healthier you. Start
@@ -40,7 +47,7 @@ function Hero() {
               {signedInUser ? "View Dashboard" : " Get Started"}
             </div>
           </div>
-          <div className="hero__container__image"data-aos="fade-in">
+          <div className="hero__container__image" data-aos="fade-in">
             <img src={hero} alt="hero" />
           </div>
         </div>

@@ -23,14 +23,14 @@ function Footer() {
               paddingTop: "2rem",
             }}
           >
-            <div className="footer_text">Company</div>
-            <div className="footer_text">Lift Media</div>
+            <div className="footer_text">Amigos</div>
+            <div className="footer_text">Instagram</div>
           </div>
           <div className="footer__section">
-            <div className="footer__heading_1">Subscribe</div>
+            <div className="footer__heading_1">LinkedIn</div>
             <div className="footer__subscribe">
               <input type="text" placeholder="Enter your email" />
-              <button className="footer__button">Subscribe</button>
+              <button className="footer__button">Twitter</button>
             </div>
           </div>
           <div
@@ -56,7 +56,7 @@ function Footer() {
             </div>
           </div>
           <div className="footer__section_1_content">
-            A product of <span className="footer__heading_2">Diety</span>
+            A product of <span className="footer__heading_2">Amigos</span>
           </div>
           <div className="footer__section_1_content">
             © 2023 All rights reserved
