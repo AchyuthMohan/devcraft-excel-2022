@@ -1,15 +1,18 @@
 import "./App.css";
 import React from "react";
-import ScrollToTop from './utils/ScrollToTop'
-import { MainPage } from "./pages";
+import ScrollToTop from "./utils/ScrollToTop";
+import { MainPage, DietPg, PlanPg, DietDetailPg } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <ScrollToTop />
+        <ScrollToTop />
         <Routes>
-          <Route path="/" element={<MainPage/>}/>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/diet" element={<DietPg />} />
+          <Route path="/plan" element={<PlanPg />} />
+          <Route path="/diet-detail" element={<DietDetailPg />} />
         </Routes>
       </BrowserRouter>
     </div>
